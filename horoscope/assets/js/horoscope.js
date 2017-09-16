@@ -32,12 +32,19 @@ jQuery(function () {
     return day;
   }
 
-  // Confirmation Function
-  const userConfirmation = () => {
-    confirmation = document.getElementById('answers').value.toLowerCase();
-    if (confirmation === "no") {
+  // conformation Function
+  const userconformation = () => {
+    conformation = document.getElementById('answers').value.toLowerCase();
+
+    if (conformation === "no" || conformation === "no." || conformation === "n") {
       questionNumber = 0;
       return questionNumber;
+    } else {
+      horoscopeOptions();
+      useAorAn();
+      horoscopeInformation();
+      $("#answers").fadeOut(400);
+      $(".horoscope-information").delay(400).fadeIn(400);
     }
   }
 
@@ -173,10 +180,26 @@ jQuery(function () {
     if (horoscope === "Aries") {
       document.getElementById('element').innerHTML = "Fire";
       document.getElementById('lucky-numbers').innerHTML = "1, 8, 17";
-      document.getElementById('strengths').innerHTML = "Courage, Confidence, Determination, Enthusiasm, Optimism, Honesty, Passion";
+      document.getElementById('strengths').innerHTML = "Courage, Confidence, Determination, Enthusiasm, Optimism, Honesty, and Passion";
       document.getElementById('weaknesses').innerHTML = "Impatience, Moodiness, Short-Tempered, Impulsiveness, and Agressiveness";
       document.getElementById('likes').innerHTML = "Comfy Clothes, Being in Charge, Pysical Challenges, and Individual Sports";
       document.getElementById('dislikes').innerHTML = "Inactivity, Delays, and Work That Doesn't Use Your Talents";
+    }
+    if (horoscope === "Taurus") {
+      document.getElementById('element').innerHTML = "Earth";
+      document.getElementById('lucky-numbers').innerHTML = "2, 6, 9, 12, 24";
+      document.getElementById('strengths').innerHTML = "Reliability, Patience, Practicality, Devotion, Responsibility, and Stability";
+      document.getElementById('weaknesses').innerHTML = "Stubbornness, Possesiveness, and Being Uncompromising";
+      document.getElementById('likes').innerHTML = " Gardening, Cooking, Music, Romance, High Quality Clothing, and Working With Your Hands";
+      document.getElementById('dislikes').innerHTML = "Sudden Change, Complications, Insecurity, and Synthetic Fabric";
+    }
+    if (horoscope === "Gemini") {
+      document.getElementById('element').innerHTML = "Air";
+      document.getElementById('lucky-numbers').innerHTML = "5, 7, 13, 23";
+      document.getElementById('strengths').innerHTML = "Gentleness, Affection, Curiosity, Adaptability, and Ability to Learn Quickly and Exchange Ideas";
+      document.getElementById('weaknesses').innerHTML = "Nervousness, Inconsistency, and Indecisiveness";
+      document.getElementById('likes').innerHTML = "Music, Books, Magazines, and Chatting";
+      document.getElementById('dislikes').innerHTML = "Being Alone, Confinement, Repetition and and Routine";
     }
   }
 
@@ -189,12 +212,7 @@ jQuery(function () {
       birthDay();
     }
     if (questionNumber === 3) {
-      userConfirmation();
-      horoscopeOptions();
-      useAorAn();
-      horoscopeInformation();
-      $("#answers").fadeOut(400);
-      $(".horoscope-information").delay(400).fadeIn(400);
+      userconformation();
     }
   }
 
@@ -205,7 +223,7 @@ jQuery(function () {
     } else if (questionNumber === 1) {
       document.getElementById('question').innerHTML = "What day were you born in?";
     } else if (questionNumber === 2) {
-      document.getElementById('question').innerHTML = `You were born <span class="bold">${month}  ${day}</span>, right?`;
+      document.getElementById('question').innerHTML = `You were born <span class="bold">${month} ${day}</span>, right?`;
     } else if (questionNumber === 3) {
       document.getElementById('question').innerHTML = `You are ${aoran} <span class="bold" id="horoscope-name">${horoscope}</span>. Check below for more information!`;
     } else {
@@ -214,7 +232,7 @@ jQuery(function () {
   }
 
   // Runs Functions on Enter
-  $('#answers').keydown(function (e) {
+  $('#answers').keydown(function(e) {
       if (e.which == 13) {
         console.log(questionNumerator());
         console.log(variableStorer());
@@ -224,6 +242,14 @@ jQuery(function () {
         displayQuestion();
       }
   });
+
+  $('#restart').click(function() {
+    $(".horoscope-information").fadeOut(400);
+    $("#answers").delay(400).fadeIn(400);
+
+    questionNumber = 0;
+    displayQuestion();
+  })
 
   // Display First Question
   displayQuestion();
