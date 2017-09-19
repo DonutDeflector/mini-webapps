@@ -35,6 +35,11 @@
   padding: 10px;
 }
 
+.word-block {
+  background-color: #fff;
+  padding: 2px 5px;
+}
+
 body {
   background-color: #eee;
   text-align: center;

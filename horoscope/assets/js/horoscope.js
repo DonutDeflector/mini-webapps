@@ -270,9 +270,9 @@ jQuery(function () {
     } else if (questionNumber === 1) {
       document.getElementById('question').innerHTML = "What day were you born in?";
     } else if (questionNumber === 2) {
-      document.getElementById('question').innerHTML = `You were born <span class="bold"> ${month} ${day}</span>, right?`;
+      document.getElementById('question').innerHTML = `You were born <span class="word-block bold">${month} ${day}</span>, right?`;
     } else if (questionNumber === 3) {
-      document.getElementById('question').innerHTML = `You are ${aoran} <span class="bold" id="horoscope-name"> ${horoscope}</span>. Check below for more information!`;
+      document.getElementById('question').innerHTML = `You are ${aoran} <span class="word-block bold" id="horoscope-name">${horoscope}</span>. Check below for more information!`;
     } else {
       document.getElementById('question').innerHTML = "null";
     }
