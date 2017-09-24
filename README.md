@@ -5,3 +5,5 @@
 2. [Night and Day](https://donutdeflector.me/mini-webapps/night-and-day)
 
 3. [Music Boxes](https://donutdeflector.me/mini-webapps/music-boxes)
+
+4. [Horoscope](https://donutdeflector.me/mini-webapps/horoscope)
