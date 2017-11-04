@@ -18,6 +18,10 @@ body {
   text-align: center;
 }
 
+.fa {
+  text-align: right;
+}
+
 /* Typography */
 
 h1, h2, h3, h4, h5,  h6 {
@@ -31,6 +35,10 @@ h1 {
   font-size: 50px;
 }
 
+h2 {
+  font-size: 40px;
+}
+
 h6 {
   font-size: 20px;
 }
@@ -39,6 +47,7 @@ p {
   font-size: 18px;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
+  word-wrap: break-word;
 }
 
 /* Add Items */
@@ -47,9 +56,8 @@ p {
   margin-top: 10px;
 }
 
-/* List */
-
 #new-item {
+  position: relative;
   background-color: #f1f1f1;
   border: 1px solid #f1f1f1;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);  
@@ -65,19 +73,33 @@ p {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);    
 }
 
+/* List */
+
 #list {
   margin-top: 20px;
+}
+
+#list h2 {
+  margin-bottom: 10px;
 }
 
 #list-item {
   background-color: #f1f1f1;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   margin-bottom: 5px;
-  min-height: 24px;
+  height: 100%;
   padding: 10px;  
   transition: all 0.3s ease;
 }
 
 #list-item:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);  
+}
+
+#item-actions {
+  margin-top: 5px;
+}
+
+#done {
+  margin-right: 5px;
 }
