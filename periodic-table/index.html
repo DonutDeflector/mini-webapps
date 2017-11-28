@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Periodic Table</title>
+    <meta charset="utf-8">
+    <link rel="manifest" href="/manifest.json">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-min.css">
+    <link rel="stginylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <link rel="stylesheet" href="/assets/css/periodic-table.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>Interactive Periodic Table</h1>
+    </div>
+
+    <div class="periodic-table">
+      <div class="element-labels">
+
+      </div>
+      <div class="element nonmetal" id="hydrogen">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">1</span>
+            <span class="atomic-mass">1.008</span>
+          </div>
+          <h2 class="element-symbol">H</h2>
+          <span class="element-name">Hydrogen</span>
+          <span class="electron-configuration">1s<sup>1</sup></span>
+        </div>
+      </div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element nonmetal" id="helium">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">2</span>
+            <span class="atomic-mass">4.003</span>
+          </div>
+          <h2 class="element-symbol">He</h2>
+          <span class="element-name">Helium</span>
+          <span class="electron-configuration">1s<sup>2</sup></span>
+        </div>
+      </div>
+      <div class="element alkali-metal" id="lithium">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">3</span>
+            <span class="atomic-mass">6.941</span>
+          </div>
+            <h2 class="element-symbol">Li</h2>
+            <span class="element-name">Lithium</span>
+          <span class="electron-configuration">[He]2s<sup>1</sup></span> 
+        </div>
+      </div>
+      <div class="element alkaline-earth-metal" id="beryllium">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">4</span>
+            <span class="atomic-mass">9.012</span>
+          </div>
+            <h2 class="element-symbol">Be</h2>
+            <span class="element-name">Beryllium</span>
+            <span class="electron-configuration">[He]2s<sup>2</sup></span> 
+          </div>
+        </div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element metalloid" id="boron">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">5</span>
+            <span class="atomic-mass">10.811</span>
+          </div>
+          <h2 class="element-symbol">B</h2>
+          <span class="element-name">Boron</span>
+          <span class="electron-configuration">[He]2s<sup>2</sup>2p<sup>1</sup></span> 
+        </div>
+      </div>
+      <div class="element nonmetal" id="carbon">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">6</span>
+            <span class="atomic-mass">12.011</span>
+          </div>
+          <h2 class="element-symbol">C</h2>
+          <span class="element-name">Carbon</span>
+          <span class="electron-configuration">[He]2s<sup>2</sup>2p<sup>2</sup></span> 
+        </div>
+      </div>
+      <div class="element nonmetal" id="nitrogen">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">7</span>
+            <span class="atomic-mass">14.007</span>
+          </div>
+          <h2 class="element-symbol">N</h2>
+          <span class="element-name">Nitrogen</span>
+          <span class="electron-configuration">[He]2s<sup>2</sup>2p<sup>3</sup></span> 
+        </div>
+      </div>
+      <div class="element nonmetal" id="oxygen">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">8</span>
+            <span class="atomic-mass">15.999</span>
+          </div>
+          <h2 class="element-symbol">O</h2>
+          <span class="element-name">Oxygen</span>
+          <span class="electron-configuration">[He]2s<sup>2</sup>2p<sup>5</sup></span> 
+        </div>
+      </div>
+      <div class="element halogen" id="fluorine">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">9</span>
+            <span class="atomic-mass">18.998</span>
+          </div>
+          <h2 class="element-symbol">F</h2>
+          <span class="element-name">Fluorine</span>
+          <span class="electron-configuration">[He]2s<sup>2</sup>2p<sup>5</sup></span> 
+        </div>
+      </div>
+      <div class="element noble-gas" id="neon">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">10</span>
+            <span class="atomic-mass">20.180</span>
+          </div>
+          <h2 class="element-symbol">Ne</h2>
+          <span class="element-name">Neon</span>
+          <span class="electron-configuration">[He]2s<sup>2</sup>2p<sup>6</sup></span> 
+        </div>
+      </div>
+      <div class="element alkali-metal" id="sodium">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">11</span>
+            <span class="atomic-mass">22.990</span>
+          </div>
+          <h2 class="element-symbol">Na</h2>
+          <span class="element-name">Sodium</span>
+          <span class="electron-configuration">[Ne]3s<sup>1</sup></span> 
+        </div>
+      </div>
+      <div class="element alkaline-earth-metal" id="magnesium">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">12</span>
+            <span class="atomic-mass">24.305</span>
+          </div>
+          <h2 class="element-symbol">Mg</h2>
+          <span class="element-name">Magnesium</span>
+          <span class="electron-configuration">[Ne]3s<sup>2</sup></span> 
+        </div>
+      </div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element" id="placeholder"></div>
+      <div class="element basic-metal" id="aluminum">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">13</span>
+            <span class="atomic-mass">26.982</span>
+          </div>
+          <h2 class="element-symbol">Al</h2>
+          <span class="element-name">Aluminum</span>
+          <span class="electron-configuration">[Ne]3s<sup>2</sup>3p<sup>1</sup></span> 
+        </div>
+      </div>
+      <div class="element metalloid" id="silicon">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">14</span>
+            <span class="atomic-mass">28.086</span>
+          </div>
+          <h2 class="element-symbol">Si</h2>
+          <span class="element-name">Silicon</span>
+          <span class="electron-configuration">[Ne]3s<sup>2</sup>3p<sup>2</sup></span> 
+        </div>
+      </div>
+      <div class="element nonmetal" id="phosphorus">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">15</span>
+            <span class="atomic-mass">30.974</span>
+          </div>
+          <h2 class="element-symbol">P</h2>
+          <span class="element-name">Phosphorus</span>
+          <span class="electron-configuration">[Ne]3s<sup>2</sup>3p<sup>3</sup></span> 
+        </div>
+      </div>
+      <div class="element nonmetal" id="sulfur">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">16</span>
+            <span class="atomic-mass">32.066</span>
+          </div>
+          <h2 class="element-symbol">S</h2>
+          <span class="element-name">Sulfur</span>
+          <span class="electron-configuration">[Ne]3s<sup>2</sup>3p<sup>4</sup></span> 
+        </div>
+      </div>
+      <div class="element halogen" id="chlorine">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">17</span>
+            <span class="atomic-mass">35.453</span>
+          </div>
+          <h2 class="element-symbol">Cl</h2>
+          <span class="element-name">Chlorine</span>
+          <span class="electron-configuration">[Ne]3s<sup>2</sup>3p<sup>5</sup></span> 
+        </div>
+      </div>
+      <div class="element noble-gas" id="argon">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">18</span>
+            <span class="atomic-mass">39.948</span>
+          </div>
+          <h2 class="element-symbol">Ar</h2>
+          <span class="element-name">Argon</span>
+          <span class="electron-configuration">[Ne]3s<sup>2</sup>3p<sup>6</sup></span> 
+        </div>
+      </div>
+      <div class="element alkali-metal" id="potassium">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">19</span>
+            <span class="atomic-mass">39.098</span>
+          </div>
+          <h2 class="element-symbol">K</h2>
+          <span class="element-name">Potassium</span>
+          <span class="electron-configuration">[Ar]4s<sup>1</sup></span> 
+        </div>
+      </div>
+      <div class="element alkaline-earth-metal" id="calcium">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">20</span>
+            <span class="atomic-mass">40.078</span>
+          </div>
+          <h2 class="element-symbol">Ca</h2>
+          <span class="element-name">Calcium</span>
+          <span class="electron-configuration">[Ar]4s<sup>2</sup></span> 
+        </div>
+      </div>
+      <div class="element transition-metal" id="scandium">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">21</span>
+            <span class="atomic-mass">44.956</span>
+          </div>
+          <h2 class="element-symbol">Sc</h2>
+          <span class="element-name">Scandium</span>
+          <span class="electron-configuration">[Ar]3d<sup>1</sup>4s<sup>2</sup></span> 
+        </div>
+      </div>
+      <div class="element transition-metal" id="titanium">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">22</span>
+            <span class="atomic-mass">47.880</span>
+          </div>
+          <h2 class="element-symbol">Ti</h2>
+          <span class="element-name">Titanium</span>
+          <span class="electron-configuration">[Ar]3d<sup>2</sup>4s<sup>2</sup></span> 
+        </div>
+      </div>
+      <div class="element transition-metal" id="vanadium">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">23</span>
+            <span class="atomic-mass">50.942</span>
+          </div>
+          <h2 class="element-symbol">V</h2>
+          <span class="element-name">Vanadium</span>
+          <span class="electron-configuration">[Ar]3d<sup>3</sup>4s<sup>2</sup></span> 
+        </div>
+      </div>
+      <div class="element transition-metal" id="chromium">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">24</span>
+            <span class="atomic-mass">51.996</span>
+          </div>
+          <h2 class="element-symbol">Cr</h2>
+          <span class="element-name">Chromium</span>
+          <span class="electron-configuration">[Ar]3d<sup>5</sup>4s<sup>1</sup></span> 
+        </div>
+      </div>
+      <div class="element transition-metal" id="manganese">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">25</span>
+            <span class="atomic-mass">54.938</span>
+          </div>
+          <h2 class="element-symbol">Mn</h2>
+          <span class="element-name">Manganese</span>
+          <span class="electron-configuration">[Ar]3d<sup>5</sup>4s<sup>2</sup></span> 
+        </div>
+      </div>
+      <div class="element transition-metal" id="iron">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">26</span>
+            <span class="atomic-mass">55.845</span>
+          </div>
+          <h2 class="element-symbol">Fe</h2>
+          <span class="element-name">Iron</span>
+          <span class="electron-configuration">[Ar]3d<sup>6</sup>4s<sup>2</sup></span> 
+        </div>
+      </div>
+      <div class="element transition-metal" id="cobalt">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">27</span>
+            <span class="atomic-mass">58.933</span>
+          </div>
+          <h2 class="element-symbol">Co</h2>
+          <span class="element-name">Cobalt</span>
+          <span class="electron-configuration">[Ar]3d<sup>7</sup>4s<sup>2</sup></span> 
+        </div>
+      </div>
+      <div class="element transition-metal" id="nickel">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">28</span>
+            <span class="atomic-mass">58.693</span>
+          </div>
+          <h2 class="element-symbol">Ni</h2>
+          <span class="element-name">Nickel</span>
+          <span class="electron-configuration">[Ar]3d<sup>8</sup>4s<sup>2</sup></span> 
+        </div>
+      </div>
+      <div class="element transition-metal" id="copper">
+        <div class="element-info">
+          <div class="atomic-info">
+            <span class="atomic-number">29</span>
+            <span class="atomic-mass">63.546</span>
+          </div>
+          <h2 class="element-symbol">Cu</h2>
+          <span class="element-name">Copper</span>
+          <span class="electron-configuration">[Ar]3d<sup>10</sup>4s<sup>1</sup></span> 
+        </div>
+      </div>
+      <div class="element transition-metal" id="zinc"></div>
+      <div class="element basic-metal" id="gallium"></div>
+      <div class="element metalloid" id="germanium"></div>
+      <div class="element metalloid" id="arsenic"></div>
+      <div class="element nonmetal" id="selenium"></div>
+      <div class="element halogen" id="bromine"></div>
+      <div class="element noble-gas" id="krypton"></div>
+    </div>
+    <script src="/assets/js/jquery-3.2.1.min.js"></script>
+    <script src="/assets/js/periodic-table.js"></script>
+  </body>
+</html>
